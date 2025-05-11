@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">YAISURI ANDREA</div>
+      <nav id="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul>
+          <li><a href="#main">Inicio</a></li>
+          <li><a href="#nosotros">Familia</a></li>
+          <li><a href="#footer">Sobre ella</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content" id="main">
+      <div class="post">
+        <img src="imagenes/mom.jpg" alt="Main Post">
+        <h2>Eres el corazón del hogar y la raíz de todo lo que florece en tu familia.</h2>
+        <p class="meta">Por Joan Stiven Peralta Bedoya - Mayo 10, 2025</p>
+	<br>
+        <p>En vez de una carta, te dedico esta pagina web, un intento pobre de blog no personal, eres una gran madre, y sobre todo una gran persona, y una mujer con la
+que me gusta convivir a diario. ¡FELIZ DIA DE LA MADRE!</p>
+      </div>
+    </div>
+    <aside class="sidebar">
+      <h3>What I like about her</h3>
+      <div class="recent-post" id="recent-posts"></div>
+    </aside>
+  </div>
+  <section class="productos-destacados" id="nosotros">
+    <h2>Momentos destacadas</h2>
+    <div class="galeria">
+      <!-- Productos se llenarán dinámicamente con JS -->
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <img src="imagenes/corazon.png" alt="tiendanube">
+      </div>
+
+      <div class="footer-social">
+        <p>Síguela en sus redes :D</p>
+        <div class="redes">
+          <a href="https://www.facebook.com/andrea.bedoya.37669" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/andrea.bedoya.37669/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <p>2025 © Joan Peralta - Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="#">Términos y condiciones</a> · 
+          <a href="#">Políticas de privacidad</a> · 
+          <a href="#">Tratamiento de datos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/script.js"></script>
+
+</body>
+</html>

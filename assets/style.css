@@ -1,0 +1,264 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+      background: #e3f6f5;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    header {
+      width: 100%;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff69b4;
+}
+
+    .content {
+      flex: 3;
+      padding: 20px;
+    }
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  border-left: 1px solid #eee;
+}
+
+.sidebar h3 {
+  padding-bottom: 20px;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post h2 {
+  margin: 15px 0 5px;
+}
+
+.post p.meta {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.post p {
+  line-height: 30px;
+}
+
+.recent-post {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+    .recent-post .item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .recent-post img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 5px;
+}
+
+.recent-post h4 {
+  font-size: 0.78em;
+  color: #444;
+  line-height: 2;
+  
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+}
+
+.productos-destacados {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.productos-destacados h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.producto {
+  text-align: center;
+  transition: 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.producto:hover {
+  box-shadow: 5px 5px 5px 5px rgba(255, 192, 203, 0.5);
+  scale: 1.1;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.producto .precio {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.producto .cuotas {
+  background-color: #fff; /* Rosado claro */
+  border: 1px solid #ff1493;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+.producto .cuotas b {
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #ff69b4;
+  color: white;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-social p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-social .redes a {
+  margin-right: 10px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social .redes a:hover {
+  color: #000;
+}
+
+
+.footer-legal {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
